@@ -74,11 +74,11 @@ function __VLS_template() {
             __VLS_elementAsFunction(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)(__assign(__assign({ key: ((index_1)) }, { class: ("py-[1.5rem] border-t-[1px] border-neutral-blue-200") }), { class: ((index_1 == 2 && 'border-b-[1px]')) }));
             (liItem);
         }
-        __VLS_elementAsFunction(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign({ class: ("block w-full rounded-xl leading-[0] py-[2.2rem] text-[1.3rem] uppercase tracking-[1.2px] lg:border-[1px] lg:border-transparent lg:hover:bg-transparent z-[100]") }, { class: ((index == 1
-                ? 'bg-white text-primary-tto  lg:hover:text-white  lg:hover:border-white'
+        __VLS_elementAsFunction(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign({ class: ("block w-full rounded-xl leading-[0] py-[2.2rem] text-[1.3rem] uppercase tracking-[1.2px] lg:border-[1px] lg:border-transparent z-[100]") }, { class: ((index == 1
+                ? 'bg-white text-primary-tto  lg:hover:text-white  lg:hover:border-white lg:hover:bg-transparent'
                 : 'transparentGradient text-white lg:hover:border-black importantHover lg:hover:text-primary-tto')) }));
     }
-    ['px-[3rem]', 'relative', 'grid', 'gap-y-[3rem]', 'pb-[15rem]', 'w-full', 'md:flex', 'md:flex-wrap', 'md:justify-center', 'md:gap-x-[3rem]', 'lg:gap-x-0', 'xl:gap-x-[6rem]', 'xl:mt-[5rem]', 'bg-white', 'p-[3rem]', 'text-center', 'text-neutral-blue-300', 'rounded-xl', 'even:bg-gradient-to-r', 'even:from-primary-ffrom', 'even:to-primary-tto', 'even:text-white', 'w-[32rem]', 'xl:scale-[1.1]', 'xl:w-[35rem]', 'mb-[1rem]', 'text-[2rem]', 'text-[6.6rem]', 'flex', 'items-center', 'justify-center', 'gap-x-[.5rem]', 'text-[4rem]', 'mb-[2.8rem]', 'mt-[1.5rem]', 'py-[1.5rem]', 'border-t-[1px]', 'border-neutral-blue-200', 'block', 'w-full', 'rounded-xl', 'leading-[0]', 'py-[2.2rem]', 'text-[1.3rem]', 'uppercase', 'tracking-[1.2px]', 'lg:border-[1px]', 'lg:border-transparent', 'lg:hover:bg-transparent', 'z-[100]',];
+    ['px-[3rem]', 'relative', 'grid', 'gap-y-[3rem]', 'pb-[15rem]', 'w-full', 'md:flex', 'md:flex-wrap', 'md:justify-center', 'md:gap-x-[3rem]', 'lg:gap-x-0', 'xl:gap-x-[6rem]', 'xl:mt-[5rem]', 'bg-white', 'p-[3rem]', 'text-center', 'text-neutral-blue-300', 'rounded-xl', 'even:bg-gradient-to-r', 'even:from-primary-ffrom', 'even:to-primary-tto', 'even:text-white', 'w-[32rem]', 'xl:scale-[1.1]', 'xl:w-[35rem]', 'mb-[1rem]', 'text-[2rem]', 'text-[6.6rem]', 'flex', 'items-center', 'justify-center', 'gap-x-[.5rem]', 'text-[4rem]', 'mb-[2.8rem]', 'mt-[1.5rem]', 'py-[1.5rem]', 'border-t-[1px]', 'border-neutral-blue-200', 'block', 'w-full', 'rounded-xl', 'leading-[0]', 'py-[2.2rem]', 'text-[1.3rem]', 'uppercase', 'tracking-[1.2px]', 'lg:border-[1px]', 'lg:border-transparent', 'z-[100]',];
     var __VLS_slots;
     var $slots;
     var __VLS_inheritedAttrs;

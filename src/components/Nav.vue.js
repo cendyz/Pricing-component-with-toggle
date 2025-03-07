@@ -45,9 +45,7 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.nav, __VLS_intrinsicElements.nav)(__assign({ class: ("container py-[7rem] text-center") }));
     __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)(__assign({ class: ("capitalize text-[3.5rem] text-neutral-500") }));
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: ("flex items-center justify-center mt-[4rem] gap-x-[2.7rem]") }));
-    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({
-        id: ("annualy"),
-    });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: ("text-neutral-blue-200") }));
     __VLS_elementAsFunction(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign(__assign({ onClick: function () {
             var _a = [];
             for (var _i = 0; _i < arguments.length; _i++) {
@@ -55,11 +53,9 @@ function __VLS_template() {
             }
             var $event = _a[0];
             __VLS_ctx.isMonthly = !__VLS_ctx.isMonthly;
-        } }, { type: ("button"), 'aria-labelledby': ("annualy monthly"), 'aria-label': ("toggle subscription status"), role: ("switch"), 'aria-pressed': ((__VLS_ctx.isMonthly)) }), { class: ("py-[1.7rem] px-[3.2rem] rounded-badge bg-gradient-to-r from-primary-ffrom to-primary-tto relative before:absolute before:w-[2.5rem] before:h-[2.5rem] before:rounded-full before:top-1/2 before:transition-[left] before:translate-y-[-50%] before:bg-white before:z-[1] z-[5] lg:hover:opacity-65 lg:transition-opacity") }), { class: ((__VLS_ctx.isMonthly ? 'before:left-[54%]' : 'before:left-[9%]')) }));
-    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({
-        id: ("monthly"),
-    });
-    ['container', 'py-[7rem]', 'text-center', 'capitalize', 'text-[3.5rem]', 'text-neutral-500', 'flex', 'items-center', 'justify-center', 'mt-[4rem]', 'gap-x-[2.7rem]', 'py-[1.7rem]', 'px-[3.2rem]', 'rounded-badge', 'bg-gradient-to-r', 'from-primary-ffrom', 'to-primary-tto', 'relative', 'before:absolute', 'before:w-[2.5rem]', 'before:h-[2.5rem]', 'before:rounded-full', 'before:top-1/2', 'before:transition-[left]', 'before:translate-y-[-50%]', 'before:bg-white', 'before:z-[1]', 'z-[5]', 'lg:hover:opacity-65', 'lg:transition-opacity',];
+        } }, { type: ("button"), 'aria-label': ("toggle subscription status") }), { class: ("py-[1.7rem] px-[3.2rem] rounded-badge bg-gradient-to-r from-primary-ffrom to-primary-tto relative before:absolute before:w-[2.5rem] before:h-[2.5rem] before:rounded-full before:top-1/2 before:transition-[left] before:translate-y-[-50%] before:bg-white before:z-[1] z-[5] lg:hover:opacity-65 lg:transition-opacity") }), { class: ((__VLS_ctx.isMonthly ? 'before:left-[54%]' : 'before:left-[9%]')) }));
+    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: ("text-neutral-blue-200") }));
+    ['container', 'py-[7rem]', 'text-center', 'capitalize', 'text-[3.5rem]', 'text-neutral-500', 'flex', 'items-center', 'justify-center', 'mt-[4rem]', 'gap-x-[2.7rem]', 'text-neutral-blue-200', 'py-[1.7rem]', 'px-[3.2rem]', 'rounded-badge', 'bg-gradient-to-r', 'from-primary-ffrom', 'to-primary-tto', 'relative', 'before:absolute', 'before:w-[2.5rem]', 'before:h-[2.5rem]', 'before:rounded-full', 'before:top-1/2', 'before:transition-[left]', 'before:translate-y-[-50%]', 'before:bg-white', 'before:z-[1]', 'z-[5]', 'lg:hover:opacity-65', 'lg:transition-opacity', 'text-neutral-blue-200',];
     var __VLS_slots;
     var $slots;
     var __VLS_inheritedAttrs;

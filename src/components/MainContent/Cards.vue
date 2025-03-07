@@ -22,10 +22,10 @@
 				</li>
 			</ul>
 			<button
-				class="block w-full rounded-xl leading-[0] py-[2.2rem] text-[1.3rem] uppercase tracking-[1.2px] lg:border-[1px] lg:border-transparent lg:hover:bg-transparent z-[100]"
+				class="block w-full rounded-xl leading-[0] py-[2.2rem] text-[1.3rem] uppercase tracking-[1.2px] lg:border-[1px] lg:border-transparent z-[100]"
 				:class="
 					index == 1
-						? 'bg-white text-primary-tto  lg:hover:text-white  lg:hover:border-white'
+						? 'bg-white text-primary-tto  lg:hover:text-white  lg:hover:border-white lg:hover:bg-transparent'
 						: 'transparentGradient text-white lg:hover:border-black importantHover lg:hover:text-primary-tto'
 				">
 				learn more
@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, inject, Ref, computed } from 'vue'
+import { inject, Ref, computed } from 'vue'
 const isMonthly = inject<Ref<boolean>>('isMonthly')
 
 const data = computed(() => [
@@ -68,8 +68,9 @@ const data = computed(() => [
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 100%;
+			width: 110%;
 			height: 100%;
+			scale: 1.1;
 			background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 			z-index: -1;
 			transition: opacity 0.3s;
