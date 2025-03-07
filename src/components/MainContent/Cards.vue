@@ -1,7 +1,9 @@
 <template>
-	<section class="px-[3rem] relative grid gap-y-[3rem] pb-[3rem] w-full">
+	<section
+		class="px-[3rem] relative grid gap-y-[3rem] pb-[15rem] w-full md:flex md:flex-wrap md:justify-center md:gap-x-[3rem] lg:gap-x-0 xl:gap-x-[6rem] xl:mt-[5rem]">
 		<div
-			class="bg-white p-[3rem] text-center text-neutral-blue-300 rounded-xl even:bg-gradient-to-r even:from-primary-ffrom even:to-primary-tto even:text-white w-[32rem]"
+			class="bg-white p-[3rem] text-center text-neutral-blue-300 rounded-xl even:bg-gradient-to-r even:from-primary-ffrom even:to-primary-tto even:text-white w-[32rem] xl:scale-[1.1] xl:w-[35rem]"
+			:class="index == 1 && 'md:order-3 lg:order-[0] lg:scale-[1.1] xl:scale-[1.25] xl:z-[100]'"
 			v-for="(item, index) in data"
 			:key="index">
 			<h2 class="mb-[1rem] text-[2rem]">{{ item.title }}</h2>
