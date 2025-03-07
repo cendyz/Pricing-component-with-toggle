@@ -7,7 +7,7 @@
 import { provide, ref, Ref } from 'vue';
 import Nav from './components/Nav.vue'
 import Main from './components/MainContent/Main.vue'
-const isMonthly: Ref<boolean> = ref(false)
+const isMonthly: Ref<boolean> = ref(true)
 
 provide('isMonthly', isMonthly)
 </script>

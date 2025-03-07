@@ -38,7 +38,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var vue_1 = require("vue");
 var Nav_vue_1 = __importDefault(require("./components/Nav.vue"));
 var Main_vue_1 = __importDefault(require("./components/MainContent/Main.vue"));
-var isMonthly = (0, vue_1.ref)(false);
+var isMonthly = (0, vue_1.ref)(true);
 (0, vue_1.provide)('isMonthly', isMonthly); /* PartiallyEnd: #3632/scriptSetup.vue */
 function __VLS_template() {
     var __VLS_ctx = {};

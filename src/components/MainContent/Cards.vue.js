@@ -39,17 +39,17 @@ var isMonthly = (0, vue_1.inject)('isMonthly');
 var data = (0, vue_1.computed)(function () { return [
     {
         title: 'Basic',
-        price: isMonthly.value ? 199.99 : 19.99,
+        price: isMonthly.value ? 19.99 : 199.99,
         info: ['500 GB', '2 Users Allowed', 'Send up to 3 GB'],
     },
     {
         title: 'Professional',
-        price: isMonthly.value ? 249.99 : 24.99,
+        price: isMonthly.value ? 24.99 : 249.99,
         info: ['1 TB', '5 Users Allowed', 'Send up to 10 GB'],
     },
     {
         title: 'Master',
-        price: isMonthly.value ? 399.99 : 39.99,
+        price: isMonthly.value ? 39.99 : 399.99,
         info: ['2 TB', '10 Users Allowed', 'Send up to 20 GB'],
     },
 ]; }); /* PartiallyEnd: #3632/scriptSetup.vue */

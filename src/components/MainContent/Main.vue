@@ -1,6 +1,6 @@
 <template>
 	<main class="container">
-		<img :src="lines" alt="" aria-hidden="true" class="absolute top-[-4%] right-[-52%]" />
+		<img :src="lines" alt="" aria-hidden="true" class="absolute top-[-4%] right-[-52%] lg:top-0 lg:right-0 lg:w-[23%]" />
 		<img :src="botLines" alt="" aria-hidden="true" class="hidden lg:block absolute bottom-0 left-0">
 		<Cards />
 	</main>

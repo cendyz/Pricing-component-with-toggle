@@ -41,17 +41,17 @@ const isMonthly = inject<Ref<boolean>>('isMonthly')
 const data = computed(() => [
 	{
 		title: 'Basic',
-		price: isMonthly.value ? 199.99 : 19.99,
+		price: isMonthly.value ? 19.99 : 199.99,
 		info: ['500 GB', '2 Users Allowed', 'Send up to 3 GB'],
 	},
 	{
 		title: 'Professional',
-		price: isMonthly.value ? 249.99 : 24.99,
+		price: isMonthly.value ? 24.99 : 249.99,
 		info: ['1 TB', '5 Users Allowed', 'Send up to 10 GB'],
 	},
 	{
 		title: 'Master',
-		price: isMonthly.value ? 399.99 : 39.99,
+		price: isMonthly.value ? 39.99 : 399.99,
 		info: ['2 TB', '10 Users Allowed', 'Send up to 20 GB'],
 	},
 ])
@@ -70,7 +70,7 @@ const data = computed(() => [
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+			background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 			z-index: -1;
 			transition: opacity 0.3s;
 		}

@@ -56,14 +56,14 @@ function __VLS_template() {
     // CSS variable injection 
     // CSS variable injection end 
     __VLS_elementAsFunction(__VLS_intrinsicElements.main, __VLS_intrinsicElements.main)(__assign({ class: ("container") }));
-    __VLS_elementAsFunction(__VLS_intrinsicElements.img)(__assign({ src: ((__VLS_ctx.lines)), alt: (""), 'aria-hidden': ("true") }, { class: ("absolute top-[-4%] right-[-52%]") }));
+    __VLS_elementAsFunction(__VLS_intrinsicElements.img)(__assign({ src: ((__VLS_ctx.lines)), alt: (""), 'aria-hidden': ("true") }, { class: ("absolute top-[-4%] right-[-52%] lg:top-0 lg:right-0 lg:w-[23%]") }));
     __VLS_elementAsFunction(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: ((__VLS_ctx.botLines)), alt: (""), 'aria-hidden': ("true") }, { class: ("hidden lg:block absolute bottom-0 left-0") }));
     // @ts-ignore
     /** @type { [typeof Cards, ] } */ ;
     // @ts-ignore
     var __VLS_0 = __VLS_asFunctionalComponent(Cards_vue_1.default, new Cards_vue_1.default({}));
     var __VLS_1 = __VLS_0.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_0), false));
-    ['container', 'absolute', 'top-[-4%]', 'right-[-52%]', 'hidden', 'lg:block', 'absolute', 'bottom-0', 'left-0',];
+    ['container', 'absolute', 'top-[-4%]', 'right-[-52%]', 'lg:top-0', 'lg:right-0', 'lg:w-[23%]', 'hidden', 'lg:block', 'absolute', 'bottom-0', 'left-0',];
     var __VLS_slots;
     var $slots;
     var __VLS_inheritedAttrs;
