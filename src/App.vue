@@ -4,8 +4,12 @@
 </template>
 
 <script setup lang="ts">
+import { provide, ref, Ref } from 'vue';
 import Nav from './components/Nav.vue'
 import Main from './components/MainContent/Main.vue'
+const isMonthly: Ref<boolean> = ref(false)
+
+provide('isMonthly', isMonthly)
 </script>
 
 <style lang="scss">

@@ -5,22 +5,24 @@
 			<p id="annualy">Annualy</p>
 			<button
 				type="button"
-				aria-labelledby="annually monthly"
+				aria-labelledby="annualy monthly"
 				aria-label="toggle subscription status"
 				role="switch"
-				:aria-pressed="isMontlhy"
-				class="py-[1.7rem] px-[3.2rem] rounded-badge bg-gradient-to-r from-primary-ffrom to-primary-tto relative before:absolute before:w-[2.5rem] before:h-[2.5rem] before:rounded-full before:top-1/2 before:transition-[left] before:translate-y-[-50%] before:bg-white"
-				:class="isMontlhy ? 'before:left-[54%]' : 'before:left-[9%]'"
-				@click="isMontlhy = !isMontlhy"></button>
+				:aria-pressed="isMonthly"
+				class="py-[1.7rem] px-[3.2rem] rounded-badge bg-gradient-to-r from-primary-ffrom to-primary-tto relative before:absolute before:w-[2.5rem] before:h-[2.5rem] before:rounded-full before:top-1/2 before:transition-[left] before:translate-y-[-50%] before:bg-white before:z-[1] z-[5]"
+				:class="isMonthly ? 'before:left-[54%]' : 'before:left-[9%]'"
+				@click="isMonthly = !isMonthly"></button>
 			<p id="monthly">Monthly</p>
 		</div>
 	</nav>
 </template>
 
 <script setup lang="ts">
-import { Ref, ref } from 'vue'
+import { Ref, inject } from 'vue'
 
-const isMontlhy: Ref<boolean> = ref(false)
+const isMonthly = inject<Ref<boolean>>('isMonthly')
+
+
 </script>
 
 <style scoped></style>

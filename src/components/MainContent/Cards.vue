@@ -1,13 +1,56 @@
 <template>
-    <section>
-
-    </section>
+	<section class="px-[3rem] relative grid gap-y-[3rem] pb-[3rem] w-full">
+		<div
+			class="bg-white p-[3rem] text-center text-neutral-blue-300 rounded-xl even:bg-gradient-to-r even:from-primary-ffrom even:to-primary-tto even:text-white w-[32rem]"
+			v-for="(item, index) in data"
+			:key="index">
+			<h2 class="mb-[1rem] text-[2rem]">{{ item.title }}</h2>
+			<p
+				class="text-[6.6rem] flex items-center justify-center gap-x-[.5rem]"
+				:class="index == 1 ? 'text-white' : 'text-neutral-blue-400'">
+				<span class="text-[4rem]">$</span>{{ item.price }}
+			</p>
+			<ul class="mb-[2.8rem] mt-[1.5rem]">
+				<li
+					v-for="(liItem, index) in item.info"
+					:key="index"
+					class="py-[1.5rem] border-t-[1px] border-neutral-blue-200"
+					:class="index == 2 && 'border-b-[1px]'">
+					{{ liItem }}
+				</li>
+			</ul>
+			<button
+				class="btn no-animation btn-block leading-[0] py-[2.2rem] text-[1.3rem] border-none uppercase tracking-[1.2px]"
+				:class="
+					index == 1 ? 'bg-white text-primary-tto' : 'bg-gradient-to-r from-primary-ffrom to-primary-tto text-white'
+				">
+				learn more
+			</button>
+		</div>
+	</section>
 </template>
 
 <script setup lang="ts">
+import { reactive, inject, Ref, computed } from 'vue'
+const isMonthly = inject<Ref<boolean>>('isMonthly')
 
+const data = computed(() => [
+	{
+		title: 'Basic',
+		price: isMonthly.value ? 199.99 : 19.99,
+		info: ['500 GB', '2 Users Allowed', 'Send up to 3 GB'],
+	},
+	{
+		title: 'Professional',
+		price: isMonthly.value ? 249.99 : 24.99,
+		info: ['1 TB', '5 Users Allowed', 'Send up to 10 GB'],
+	},
+	{
+		title: 'Master',
+		price: isMonthly.value ? 399.99 : 39.99,
+		info: ['2 TB', '10 Users Allowed', 'Send up to 20 GB'],
+	},
+])
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main class="container">
 		<img :src="lines" alt="" aria-hidden="true" class="absolute top-[-4%] right-[-52%]" />
 		<Cards />
 	</main>
