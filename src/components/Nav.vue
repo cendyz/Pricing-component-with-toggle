@@ -9,7 +9,7 @@
 				aria-label="toggle subscription status"
 				role="switch"
 				:aria-pressed="isMonthly"
-				class="py-[1.7rem] px-[3.2rem] rounded-badge bg-gradient-to-r from-primary-ffrom to-primary-tto relative before:absolute before:w-[2.5rem] before:h-[2.5rem] before:rounded-full before:top-1/2 before:transition-[left] before:translate-y-[-50%] before:bg-white before:z-[1] z-[5]"
+				class="py-[1.7rem] px-[3.2rem] rounded-badge bg-gradient-to-r from-primary-ffrom to-primary-tto relative before:absolute before:w-[2.5rem] before:h-[2.5rem] before:rounded-full before:top-1/2 before:transition-[left] before:translate-y-[-50%] before:bg-white before:z-[1] z-[5] lg:hover:opacity-65 lg:transition-opacity"
 				:class="isMonthly ? 'before:left-[54%]' : 'before:left-[9%]'"
 				@click="isMonthly = !isMonthly"></button>
 			<p id="monthly">Monthly</p>
@@ -21,8 +21,6 @@
 import { Ref, inject } from 'vue'
 
 const isMonthly = inject<Ref<boolean>>('isMonthly')
-
-
 </script>
 
 <style scoped></style>

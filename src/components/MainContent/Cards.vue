@@ -22,9 +22,11 @@
 				</li>
 			</ul>
 			<button
-				class="btn no-animation btn-block leading-[0] py-[2.2rem] text-[1.3rem] border-none uppercase tracking-[1.2px]"
+				class="block w-full rounded-xl leading-[0] py-[2.2rem] text-[1.3rem] uppercase tracking-[1.2px] lg:border-[1px] lg:border-transparent lg:hover:bg-transparent z-[100]"
 				:class="
-					index == 1 ? 'bg-white text-primary-tto' : 'bg-gradient-to-r from-primary-ffrom to-primary-tto text-white'
+					index == 1
+						? 'bg-white text-primary-tto  lg:hover:text-white  lg:hover:border-white'
+						: 'transparentGradient text-white lg:hover:border-black importantHover lg:hover:text-primary-tto'
 				">
 				learn more
 			</button>
@@ -55,4 +57,29 @@ const data = computed(() => [
 ])
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+@media (min-width: 1024px) {
+	.transparentGradient {
+		position: relative;
+		overflow: hidden;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+			z-index: -1;
+			transition: opacity 0.3s;
+		}
+
+		&:hover {
+			&::before {
+				opacity: 0;
+			}
+		}
+	}
+}
+</style>
